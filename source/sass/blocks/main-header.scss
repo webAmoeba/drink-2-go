@@ -1,14 +1,10 @@
 .main-header__wrapper {
+  position: relative;
   display: grid;
   grid-template-columns: 80px 1fr;
   grid-template-areas:
     "logo user"
     "menu menu";
-}
-
-.main-header__first-line {
-  padding-top: 12px;
-  padding-bottom: 12px;
 }
 
 .main-header__logo-link {
@@ -31,13 +27,45 @@
 
 .main-header__navigation {
   grid-area: menu;
+  background-color: $main-background-color;
+
+  &--hidden {
+    @media (max-width: ($tablet-width - 1)) {
+      display: none;
+    }
+  }
+
+  &--with-js {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 }
 
-.main-header__navigation-list {}
+.main-header__navigation-list {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
 
-.main-header__navigation-item {}
+.main-header__navigation-item {
+  border-top: 1px solid $border-menu;
 
-.main-header__navigation-link {}
+  &:last-child {
+    border-bottom: 1px solid $border-menu;
+  }
+}
+
+.main-header__navigation-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 58px;
+}
 
 .main-header__user-buttons {
   grid-area: user;
@@ -57,9 +85,7 @@
   background-color: inherit;
 }
 
-.main-header__shop-cart {}
-
-.main-header__menu-toggle {
+.main-header__menu-toggler {
   display: block;
   position: relative;
 

@@ -38,12 +38,9 @@ const html = () => {
 
 // Scripts
 
-const scripts = () => {
+export const scripts = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
-    .pipe(rename(function (path) {
-      path.basename += '.min'
-    }))
     .pipe(gulp.dest('build/js'));
 }
 
