@@ -1,23 +1,86 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>&&&&&&&&&&</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>drink 2 go</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- <link rel="icon" href="favicon.ico"> -->
-  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+  <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-ExtraBold.woff" as="font" type="font/woff" crossorigin="anonymous">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ptsansbold.woff" as="font" type="font/woff" crossorigin="anonymous">
 </head>
 
 <body>
-  <h1>hola mfs</h1>
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo-link" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/main-logo/desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/main-logo/tablet.svg">
+          <img class="main-header__logo" src="img/main-logo/mobile.svg" width="32" height="36"
+            alt="Логотип и ссылка на главную страницу.">
+        </picture>
+      </a>
+      <nav class="main-header__navigation">
+        <ul class="main-header__navigation-list reset-list">
+          <li class="main-header__navigation-item">
+            <a class="main-header__navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="main-header__navigation-item">
+            <a class="main-header__navigation-link" href="#">Каталог</a>
+          </li>
+          <li class="main-header__navigation-item">
+            <a class="main-header__navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="main-header__navigation-item">
+            <a class="main-header__navigation-link" href="#">О нас</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main-header__user-buttons">
+        <a href="#" class="main-header__user-button">
+          <span class="visually-hidden">Профиль.</span>
+          <svg width="16" height="16" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#user"></use>
+          </svg>
+        </a>
+        <a href="#" class="main-header__user-button">
+          <span class="visually-hidden">Корзина.</span>
+          <svg width="16" height="16" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#union"></use>
+          </svg>
+        </a>
+        <!--
+          классы для управления кнопкой:
+          main-header__menu-toggle--opened
+          main-header__menu-toggle--closed
+          main-header__menu-toggle--hidden
+         -->
+        <button href="#"
+          class="main-header__user-button main-header__menu-toggle main-header__menu-toggle--closed"></button>
+      </div>
+    </div>
+  </header>
+
+  <main>2</main>
+
+  <footer>3</footer>
 </body>
 
 </html>

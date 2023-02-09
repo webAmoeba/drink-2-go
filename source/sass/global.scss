@@ -24,7 +24,6 @@ body {
   color: $main-color;
 
   background-color: $main-background-color;
-  overflow-x: hidden;
 }
 
 main {
@@ -53,4 +52,10 @@ img {
   border: 0;
 
   clip: rect(0 0 0 0);
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
