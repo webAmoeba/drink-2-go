@@ -5,12 +5,37 @@
   grid-template-areas:
     "logo user"
     "menu menu";
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 160px 1fr 160px;
+    grid-template-areas: unset;
+
+    @include tablet-container;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 350px 1fr 350px;
+
+    @include desktop-container;
+  }
 }
 
 .main-header__logo-link {
-  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  padding: 12px $mobile-indent;
   line-height: 0;
   grid-area: logo;
+
+  @media (min-width: $tablet-width) {
+    grid-area: unset;
+    min-height: 80px;
+    padding: 12px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 12px 0;
+  }
 }
 
 .main-header__logo {
@@ -20,14 +45,28 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 170px;
     height: 36px;
+    min-width: 170px;
+  }
+}
+
+.main-header__logo-link-description {
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: 20px;
+
+  @media (max-width: ($desktop-width - 1)) {
+    @include visually-hidden;
   }
 }
 
 .main-header__navigation {
   grid-area: menu;
   background-color: $main-background-color;
+
+  @media (min-width: $tablet-width) {
+    grid-area: unset;
+  }
 
   &--hidden {
     @media (max-width: ($tablet-width - 1)) {
@@ -36,9 +75,11 @@
   }
 
   &--with-js {
-    position: absolute;
-    top: 0;
-    width: 100%;
+    @media (max-width: ($tablet-width - 1)) {
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
   }
 }
 
@@ -50,13 +91,21 @@
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.02em;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .main-header__navigation-item {
-  border-top: 1px solid $border-menu;
+  @media (max-width: ($tablet-width - 1)) {
+    border-top: 1px solid $border-menu;
 
-  &:last-child {
-    border-bottom: 1px solid $border-menu;
+    &:last-child {
+      border-bottom: 1px solid $border-menu;
+    }
   }
 }
 
@@ -65,13 +114,25 @@
   align-items: center;
   justify-content: center;
   min-height: 58px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 80px;
+  }
 }
 
 .main-header__user-buttons {
   grid-area: user;
   display: flex;
+  justify-content: flex-end;
+  align-items: start;
   flex-wrap: wrap;
   margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    grid-area: unset;
+  }
 }
 
 .main-header__user-button {
@@ -80,9 +141,23 @@
   justify-content: center;
   min-height: 60px;
   min-width: 60px;
-  padding: 0;
+  padding: 0 $mobile-indent;
   border: none;
   background-color: inherit;
+
+  @media (min-width: $tablet-width) {
+    min-height: 80px;
+  }
+}
+
+.main-header__user-button-description {
+  @media (max-width: ($desktop-width - 1)) {
+    @include visually-hidden;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 8px;
+  }
 }
 
 .main-header__menu-toggler {
@@ -126,5 +201,9 @@
       left: 50%;
       transform: translate(-50%, -50%) rotate(-45deg);
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
