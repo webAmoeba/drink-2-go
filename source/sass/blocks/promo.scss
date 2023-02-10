@@ -1,8 +1,14 @@
 .promo {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 60px;
   background-color: $background-color-promo;
 }
 
-.promo__slider {}
+.promo__slider {
+  margin-left: $mobile-indent;
+  margin-right: $mobile-indent;
+}
 
 .promo__list {}
 
@@ -13,13 +19,13 @@
 .promo__item-section {}
 
 .promo__text-content {
-  padding-left: $mobile-indent;
-  padding-right: $mobile-indent;
+  margin-top: 10px;
   text-align: center;
 }
 
 .promo__product-header {
   margin: 0;
+  margin-top: 4px;
   font-weight: 700;
   font-size: 36px;
   line-height: 48px;
@@ -31,16 +37,88 @@
   margin-top: 10px;
 }
 
-.promo__is-new {}
+.promo__is-new {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-base-primary;
+}
 
-.promo__price-and-order {}
+.promo__price-and-order {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.promo__old-price {}
+.promo__old-price {
+  margin-right: 6px;
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration-line: line-through;
+  color: $color-base-primary;
+}
 
-.promo__price {}
+.promo__price {
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
 
-.promo__order-button {}
+.promo__order-button {
+  padding: 8px 20px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $background-color-main;
+  background-color: $color-base-primary;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-.promo__img {}
+.promo__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-.promo__slider-button {}
+.promo__slider-button {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  display: block;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 20px;
+    background-image: url("../img/icons/slider-button.svg");
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--left {
+    left: 0;
+
+    &::before {}
+  }
+
+  &--right {
+    right: 0;
+
+    &::before {
+      transform: translate(-50%, -50%) scale(-1, 1);
+    }
+  }
+}

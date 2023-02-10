@@ -79,6 +79,7 @@
       position: absolute;
       top: 0;
       width: 100%;
+      z-index: 1;
     }
   }
 }
@@ -110,8 +111,8 @@
 
   &--current {
     @media (min-width: $tablet-width) {
-      color: $current-menu-item;
-      border-bottom: 2px solid $current-menu-item;
+      color: $color-base-primary;
+      border-bottom: 2px solid $color-base-primary;
     }
   }
 }
