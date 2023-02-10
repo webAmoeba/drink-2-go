@@ -96,9 +96,30 @@
         <ul class="promo__list reset-list">
           <li class="promo__item">
             <section class="promo__item-section">
-              <div>
-                <h3 class="promo__product-header"></h3>
-                <p class="promo__product-description"></p>
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="img/products/decaf-flat-white/desktop.webp 1x, img/products/decaf-flat-white/desktop@2x.webp 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/products/decaf-flat-white/tablet.webp 1x, img/products/decaf-flat-white/tablet@2x.webp 2x">
+                <source media="(min-width: 320px)"
+                  srcset="img/products/decaf-flat-white/mobile.webp 1x, img/products/decaf-flat-white/mobile@2x.webp 2x">
+
+                <source media="(min-width: 1440px)"
+                  srcset="img/products/decaf-flat-white/desktop.png 1x, img/products/decaf-flat-white/desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/products/decaf-flat-white/tablet.png 1x, img/products/decaf-flat-white/tablet@2x.png 2x">
+                <source media="(min-width: 320px)"
+                  srcset="img/products/decaf-flat-white/mobile.png 1x, img/img/products/decaf-flat-white/mobile@2x.png 2x">
+                <img class="promo__img" src="img/products/decaf-flat-white/mobile.png" alt="Фото баночки напитка.">
+              </picture>
+
+              <div class="promo__text-content">
+                <h3 class="promo__product-header">Декаф Флэт Уайт</h3>
+                <p class="promo__product-description">
+                  Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для
+                  расслабления после
+                  тяжёлого рабочего дня
+                </p>
                 <span class="promo__is-new">Новинка!</span>
                 <div class="promo__price-and-order">
                   <span class="promo__old-price">295₽</span>
@@ -106,9 +127,12 @@
                   <button class="promo__order-button">Заказать</button>
                 </div>
               </div>
-              <picture>
-                <img class="promo__img" src="" alt="">
-              </picture>
+              <button class="promo__slider-button promo__slider-button--left">
+                <span class="visually-hidden">Слайд влево</span>
+              </button>
+              <button class="promo__slider-button promo__slider-button--right">
+                <span class="visually-hidden">Слайд вправо</span>
+              </button>
             </section>
           </li>
         </ul>

@@ -1,0 +1,46 @@
+.promo {
+  background-color: $background-color-promo;
+}
+
+.promo__slider {}
+
+.promo__list {}
+
+.reset-list {}
+
+.promo__item {}
+
+.promo__item-section {}
+
+.promo__text-content {
+  padding-left: $mobile-indent;
+  padding-right: $mobile-indent;
+  text-align: center;
+}
+
+.promo__product-header {
+  margin: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+}
+
+.promo__product-description {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.promo__is-new {}
+
+.promo__price-and-order {}
+
+.promo__old-price {}
+
+.promo__price {}
+
+.promo__order-button {}
+
+.promo__img {}
+
+.promo__slider-button {}
