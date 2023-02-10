@@ -14,13 +14,13 @@
 }
 
 //использовать, когда до таблетки нет контейнера вовсе, а на пк появляется
-@mixin tablet-container {
+@mixin container-tablet {
   margin-left: $tablet-indent;
   margin-right: $tablet-indent;
 }
 
 //использовать, когда до таблетки нет контейнера вовсе, а на пк появляется
-@mixin desktop-container {
+@mixin container-desktop {
   margin-left: auto;
   margin-right: auto;
   max-width: $desktop-width;

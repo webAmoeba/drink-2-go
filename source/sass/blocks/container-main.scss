@@ -1,0 +1,12 @@
+.container-main {
+  margin-left: $mobile-indent;
+  margin-right: $mobile-indent;
+
+  @media (min-width: $tablet-width) {
+    @include container-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+  }
+}
