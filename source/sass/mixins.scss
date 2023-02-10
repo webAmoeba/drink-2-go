@@ -13,11 +13,6 @@
   clip: rect(0 0 0 0);
 }
 
-//использовать, когда до таблетки нет контейнера вовсе, а на пк появляется
-@mixin container-tablet {
-  padding-left: $tablet-indent;
-  padding-right: $tablet-indent;
-}
 
 //использовать, когда до таблетки нет контейнера вовсе, а на пк появляется
 @mixin container-desktop {
