@@ -62,7 +62,7 @@
 
 .main-header__navigation {
   grid-area: menu;
-  background-color: $main-background-color;
+  background-color: $background-color-main;
 
   @media (min-width: $tablet-width) {
     grid-area: unset;
@@ -105,6 +105,13 @@
 
     &:last-child {
       border-bottom: 1px solid $border-menu;
+    }
+  }
+
+  &--current {
+    @media (min-width: $tablet-width) {
+      color: $current-menu-item;
+      border-bottom: 2px solid $current-menu-item;
     }
   }
 }
