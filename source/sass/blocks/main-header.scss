@@ -237,18 +237,18 @@
   }
 }
 
-.promo__tablet-pc-br {
-  display: none;
+// .promo__tablet-pc-br {
+//   display: none;
 
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
+//   @media (min-width: $tablet-width) {
+//     display: block;
+//   }
+// }
 
-.promo__pc-br {
-  display: none;
+// .promo__pc-br {
+//   display: none;
 
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     display: block;
+//   }
+// }
