@@ -14,8 +14,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 30px;
-    padding-bottom: 84px;
+    padding: 0;
+  }
+}
+
+.promo__slider-wrapper {
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+    position: relative;
   }
 }
 
@@ -26,6 +32,11 @@
   @media (min-width: $tablet-width) {
     margin-left: 90px;
     margin-right: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 84px;
   }
 }
 

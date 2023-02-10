@@ -1,6 +1,6 @@
 .main-header {
   @media (min-width: $desktop-width) {
-    // @include container-desktop;
+    @include container-desktop;
   }
 }
 
