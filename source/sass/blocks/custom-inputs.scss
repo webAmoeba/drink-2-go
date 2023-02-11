@@ -2,15 +2,13 @@
   display: flex;
   flex-direction: column;
   row-gap: 22px;
+
+  &--checkbox {
+    row-gap: 20px;
+  }
 }
 
-.custom-inputs__label {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  line-height: 24px;
-  cursor: pointer;
-}
+
 
 .custom-inputs__default-radio,
 .custom-inputs__default-checkbox {
@@ -18,13 +16,43 @@
   appearance: none;
 }
 
-.custom-inputs__custom-radio {
+
+
+//////////////////////////////////                                                                                 КАСТОМНЫЕ РАДИО И ЧЕКБОКСЫ В СТОКЕ (НАЧАЛО)
+.custom-inputs__custom-radio,
+.custom-inputs__custom-checkbox {
   width: 24px;
   height: 24px;
   border: 2px solid $color-placeholder;
   border-radius: 50%;
+  background-color: $background-color-main;
 }
 
+.custom-inputs__custom-checkbox {
+  position: relative;
+  width: 42px;
+  border-radius: 12px;
+  background-color: $color-placeholder;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: $background-color-main;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    border-radius: 50%;
+  }
+}
+
+//////////////////////////////////                                                                                 КАСТОМНЫЕ РАДИО И ЧЕКБОКСЫ В СТОКЕ (КОНЕЦ)
+
+
+
+
+//////////////////////////////////                                                                                 CHECKED (НАЧАЛО)
 .custom-inputs__default-radio:checked~.custom-inputs__custom-radio {
   position: relative;
   border-color: $color-base-primary;
@@ -42,8 +70,85 @@
   }
 }
 
+.custom-inputs__default-checkbox:checked~.custom-inputs__custom-checkbox {
+  background-color: $color-base-primary-lighter;
+  border-color: $color-base-primary;
+
+  &::before {
+    left: unset;
+    right: 0;
+  }
+}
+
+//////////////////////////////////                                                                                 CHECKED (КОНЕЦ)
+
+
 .custom-inputs__label-text {
   margin-left: 10px;
 }
 
-.custom-inputs__custom-checkbox {}
+//////////////////////////////////                                                                                 F O C U S        (НАЧАЛО)
+.custom-inputs__label:focus-within {
+  .custom-inputs__custom-radio {
+    border-color: $color-base-primary;
+    position: relative;
+
+    &::before {
+      background-color: rgba($color-base-primary, 0.25);
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+  }
+}
+
+.custom-inputs__label:focus-within {
+  .custom-inputs__custom-checkbox {
+    border-color: $color-base-primary;
+    background-color: rgba($color-base-primary-lighter, 0.25);
+    // outline: 2px solid $color-base-primary;
+    // outline-offset: 2px;
+  }
+}
+
+
+
+//////////////////////////////////                                                                                 F O C U S        (КОНЕЦ)
+
+.custom-inputs__label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+
+  //////////////////////////////////                                                                                 H O V E R        (НАЧАЛО)
+  &:hover .custom-inputs__custom-radio {
+    border-color: $color-base-primary;
+    position: relative;
+
+    &::before {
+      background-color: rgba($color-base-primary, 0.25);
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+  }
+
+  &:hover .custom-inputs__custom-checkbox {
+    border-color: $color-base-primary;
+    background-color: rgba($color-base-primary-lighter, 0.25);
+  }
+
+  //////////////////////////////////                                                                                 H O V E R        (КОНЕЦ)
+}
