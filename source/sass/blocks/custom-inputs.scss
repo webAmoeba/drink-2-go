@@ -152,3 +152,37 @@
 
   //////////////////////////////////                                                                                 H O V E R        (КОНЕЦ)
 }
+
+
+
+//////////////////////////////////                                                                                 D I S A B L E D        (НАЧАЛО)
+.custom-inputs__default-radio:disabled~.custom-inputs__custom-radio {
+  border-color: $color-disabled;
+  background-color: transparent;
+
+  &::before {
+    background-color: transparent;
+  }
+}
+
+.custom-inputs__default-radio:checked:disabled~.custom-inputs__custom-radio {
+  &::before {
+    background-color: $color-disabled;
+  }
+}
+
+.custom-inputs__default-checkbox:disabled~.custom-inputs__custom-checkbox {
+  border-color: $color-disabled;
+  background-color: $color-disabled;
+}
+
+.custom-inputs__default-checkbox:checked:disabled~.custom-inputs__custom-checkbox {
+  border-color: $color-disabled;
+  background-color: $color-disabled;
+
+  &::before {
+    background-color: $color-placeholder;
+  }
+}
+
+//////////////////////////////////                                                                                 D I S A B L E D        (КОНЕЦ)
