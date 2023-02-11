@@ -19,7 +19,7 @@
 .inputs-group__range-inputs-background-line {
   height: 2px;
   width: 100%;
-  background-color: $disabled;
+  background-color: $color-disabled;
   position: absolute;
   top: 50%;
   left: 0;
@@ -39,6 +39,7 @@
   border-radius: 50%;
   background-color: $background-color-main;
   flex-shrink: 0;
+  cursor: pointer;
 
   &--left {
     margin-left: 0;
@@ -59,4 +60,39 @@
   height: 4px;
   width: 100%;
   background-color: $color-base-primary-lighter;
+}
+
+.inputs-group__number-inputs {
+  display: flex;
+  margin-top: 25px;
+}
+
+.inputs-group__number-input-label {
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  min-width: 118px;
+}
+
+.inputs-group__number-input {
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 118px;
+  height: 38px;
+  border: 2px solid $color-base-primary-lighter;
+  border-radius: 4px;
+  background-color: $background-color-main;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  appearance: textfield;
+}
+
+.inputs-group__between-number-inputs {
+  width: 44px;
+  flex-shrink: 0;
 }
