@@ -1,6 +1,6 @@
 .main-header {
-  @media (min-width: $desktop-width) {
-    @include container-desktop;
+  @media (max-width: ($tablet-width - 1)) {
+    margin-right: 0;
   }
 }
 
@@ -15,21 +15,17 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 124px 1fr 160px;
     grid-template-areas: unset;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 350px 1fr 300px;
-
-    @include container-desktop-inner;
   }
 }
 
 .main-header__logo-link {
   display: flex;
   align-items: center;
-  padding: 12px $mobile-indent;
+  padding: 12px 0;
   line-height: 0;
   grid-area: logo;
 

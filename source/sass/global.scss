@@ -42,6 +42,10 @@ img {
   height: auto;
 }
 
+button {
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+
 .visually-hidden {
   @include visually-hidden;
 }
