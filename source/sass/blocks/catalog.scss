@@ -1,0 +1,19 @@
+.catalog {
+  background-color: $background-color-second;
+  padding-top: 50px;
+  padding-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+}
+
+.catalog__form {
+  margin-top: 20px;
+}
