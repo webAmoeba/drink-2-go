@@ -1,0 +1,49 @@
+.custom-inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+}
+
+.custom-inputs__label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.custom-inputs__default-radio,
+.custom-inputs__default-checkbox {
+  position: absolute;
+  appearance: none;
+}
+
+.custom-inputs__custom-radio {
+  width: 24px;
+  height: 24px;
+  border: 2px solid $color-placeholder;
+  border-radius: 50%;
+}
+
+.custom-inputs__default-radio:checked~.custom-inputs__custom-radio {
+  position: relative;
+  border-color: $color-base-primary;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: $color-base-primary;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+}
+
+.custom-inputs__label-text {
+  margin-left: 10px;
+}
+
+.custom-inputs__custom-checkbox {}

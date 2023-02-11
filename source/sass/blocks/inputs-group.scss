@@ -1,14 +1,17 @@
 .inputs-group {}
 
 .inputs-group__header {
+  margin-bottom: 22px;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
-.inputs-group__price-inputs {
-  margin-top: 22px;
-}
+.inputs-group__price-inputs {}
 
 .inputs-group__range-inputs {
   position: relative;
@@ -90,6 +93,10 @@
   line-height: 24px;
   text-align: center;
   appearance: textfield;
+
+  &::placeholder {
+    color: $color-placeholder;
+  }
 }
 
 .inputs-group__between-number-inputs {

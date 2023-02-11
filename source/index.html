@@ -187,38 +187,90 @@
         </div>
 
         <form class="catalog__form form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form__price inputs-group">
-            <div class="inputs-group__header">Цена</div>
-
-            <div class="inputs-group__price-inputs">
-              <div class="inputs-group__range-inputs">
-                <div class="inputs-group__range-inputs-background-line"></div>
-                <div class="inputs-group__ranges">
-                  <div class="inputs-group__range inputs-group__range--left"></div>
-                  <div class="inputs-group__between-ranges">
-                    <div class="inputs-group__between-ranges-line"></div>
+          <div class="form__different-inputs-wrapper">
+            <div class="form__price inputs-group">
+              <div class="inputs-group__header">Цена</div>
+              <div class="inputs-group__price-inputs">
+                <div class="inputs-group__range-inputs">
+                  <div class="inputs-group__range-inputs-background-line"></div>
+                  <div class="inputs-group__ranges">
+                    <div class="inputs-group__range inputs-group__range--left"></div>
+                    <div class="inputs-group__between-ranges">
+                      <div class="inputs-group__between-ranges-line"></div>
+                    </div>
+                    <div class="inputs-group__range inputs-group__range--right"></div>
                   </div>
-                  <div class="inputs-group__range inputs-group__range--right"></div>
+                </div>
+                <div class="inputs-group__number-inputs">
+                  <label class="inputs-group__number-input-label">
+                    <input class="inputs-group__number-input" type="number" placeholder="0">
+                  </label>
+                  <div class="inputs-group__between-number-inputs"></div>
+                  <label class="inputs-group__number-input-label">
+                    <input class="inputs-group__number-input" type="number" placeholder="0" value="900">
+                  </label>
                 </div>
               </div>
-              <div class="inputs-group__number-inputs">
-                <label class="inputs-group__number-input-label">
-                  <input class="inputs-group__number-input" type="number" placeholder="0">
+            </div>
+            <div class="form__availability-of-milk inputs-group">
+              <div class="inputs-group__header">Наличие молока</div>
+              <div class="custom-inputs">
+                <label class="custom-inputs__label">
+                  <input class="custom-inputs__default-radio" type="radio" name="availability-of-milk"
+                    value="doesnt_matter">
+                  <span class="custom-inputs__custom-radio"></span>
+                  <span class="custom-inputs__label-text">Неважно</span>
                 </label>
-                <div class="inputs-group__between-number-inputs"></div>
-                <label class="inputs-group__number-input-label">
-                  <input class="inputs-group__number-input" type="number" placeholder="0">
+                <label class="custom-inputs__label">
+                  <input class="custom-inputs__default-radio" type="radio" name="availability-of-milk"
+                    value="only-an-animal">
+                  <span class="custom-inputs__custom-radio"></span>
+                  <span class="custom-inputs__label-text">Только животное</span>
+                </label>
+                <label class="custom-inputs__label">
+                  <input class="custom-inputs__default-radio" type="radio" name="availability-of-milk"
+                    value="only-vegetable">
+                  <span class="custom-inputs__custom-radio"></span>
+                  <span class="custom-inputs__label-text">Только растительное</span>
+                </label>
+                <label class="custom-inputs__label">
+                  <input class="custom-inputs__default-radio" type="radio" name="availability-of-milk"
+                    value="without_milk">
+                  <span class="custom-inputs__custom-radio"></span>
+                  <span class="custom-inputs__label-text">Без молока</span>
                 </label>
               </div>
             </div>
-          </div>
-
-          <div class="form__availability-of-milk inputs-group">
-            <div class="inputs-group__header">Наличие молока</div>
-          </div>
-
-          <div class="form__country-of-origin inputs-group">
-            <div class="inputs-group__header">Страна произростания</div>
+            <div class="form__country-of-origin inputs-group">
+              <div class="inputs-group__header">Страна произростания</div>
+              <div class="custom-inputs">
+                <label class="custom-inputs__label">
+                  <input class="custom-inputs__default-checkbox" type="checkbox" name="Brazil" value="Brazil">
+                  <span class="custom-inputs__custom-checkbox"></span>
+                  <span class="custom-inputs__label-text">Бразилия</span>
+                </label>
+                <label class="custom-inputs__label">
+                  <input class="custom-inputs__default-checkbox" type="checkbox" name="Ethiopia" value="Ethiopia">
+                  <span class="custom-inputs__custom-checkbox"></span>
+                  <span class="custom-inputs__label-text">Эфиопия</span>
+                </label>
+                <label class="custom-inputs__label">
+                  <input class="custom-inputs__default-checkbox" type="checkbox" name="Colombia" value="Colombia">
+                  <span class="custom-inputs__custom-checkbox"></span>
+                  <span class="custom-inputs__label-text">Колумбия</span>
+                </label>
+                <label class="custom-inputs__label">
+                  <input class="custom-inputs__default-checkbox" type="checkbox" name="Costa-Rica" value="Costa-Rica">
+                  <span class="custom-inputs__custom-checkbox"></span>
+                  <span class="custom-inputs__label-text">Коста-Рика</span>
+                </label>
+                <label class="custom-inputs__label">
+                  <input class="custom-inputs__default-checkbox" type="checkbox" name="Peru" value="Peru">
+                  <span class="custom-inputs__custom-checkbox"></span>
+                  <span class="custom-inputs__label-text">Перу</span>
+                </label>
+              </div>
+            </div>
           </div>
         </form>
       </div> <!-- container-main -->
