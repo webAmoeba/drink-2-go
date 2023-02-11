@@ -24,9 +24,35 @@
   border: none;
   border-radius: 4px;
   background-color: $color-base-primary;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-base-primary-lighter;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-active;
+  }
+
+  &:disabled {
+    background-color: $color-placeholder;
+  }
 }
 
 .form__button--reset {
   background-color: $background-color-main;
   color: $color-base-primary;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:disabled {
+    color: $background-color-main;
+  }
+
+  &:disabled {
+    background-color: $color-disabled;
+  }
 }

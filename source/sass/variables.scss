@@ -5,10 +5,11 @@ $desktop-width: 1440px;
 $color-main: #333333;
 $border-menu: #F0EBFF;
 $color-disabled: #E2E2E2;
-$color-placeholder: #BDBDBD;
+$color-placeholder: #BDBDBD; //sometimes disabled, stock radio and checks
 
 $color-base-primary: #7859CF;
-$color-base-primary-lighter: #9070EC;
+$color-base-primary-lighter: #9070EC; //hover & focus for btns
+$color-active: #593CAC;
 
 $background-color-main: #ffffff;
 $background-color-second: #F8F8F8;
