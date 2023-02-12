@@ -439,14 +439,21 @@
           <div class="products__pagination pagination">
             <button class="pagination__button pagination__button--back">
               <span class="pagination__button-description">Назад</span>
+              <svg class="pagination__button-icon" width="10" height="6" aria-hidden="true">
+                <use class="" xlink:href="img/sprite.svg#bird-of-selector"></use>
+              </svg>
             </button>
             <ol class="pagination__page-numbers reset-list">
-              <li class="pagination__page-number">1</li>
-              <li class="pagination__page-number">2</li>
-              <li class="pagination__page-number">3</li>
+              <li><a class="pagination__page-number" href="#">1</a></li>
+              <li><a class="pagination__page-number pagination__page-number--current" href="#">2</a></li>
+              <li><a class="pagination__page-number" href="#">3</a></li>
             </ol>
             <button class="pagination__button pagination__button--next">
               <span class="pagination__button-description">Вперёд</span>
+              <svg class="pagination__button-icon pagination__button-icon--right" width="10" height="6"
+                aria-hidden="true">
+                <use class="" xlink:href="img/sprite.svg#bird-of-selector"></use>
+              </svg>
             </button>
           </div>
         </div>

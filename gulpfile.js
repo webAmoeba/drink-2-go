@@ -79,7 +79,7 @@ export const sprite = () => {
   return gulp.src('source/img/sprite/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
-      inlineSvg: true
+      inlineSvg: true,
     }))
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'));
