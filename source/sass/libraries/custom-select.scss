@@ -1,7 +1,5 @@
 /* The container must be positioned relative: */
-/**
- * https: //www.w3schools.com/howto/howto_custom_select.asp
- */
+/* https: //www.w3schools.com/howto/howto_custom_select.asp */
 
 /* The container must be positioned relative: */
 .custom-select {
@@ -21,6 +19,11 @@
   color: $color-base-primary;
   background-color: transparent;
   padding: 4px 30px 4px 10px;
+
+  &:hover {
+    background-color: $color-hover-sort-item;
+    border-radius: 4px;
+  }
 }
 
 /* Style the arrow inside the select element: */
@@ -51,6 +54,18 @@
   background-color: transparent;
 }
 
+.select-items div:nth-child(1) {
+  border-radius: 4px 4px 0px 0px;
+}
+
+.select-items div:last-child {
+  border-radius: 0px 0px 4px 4px;
+}
+
+.select-items div:not(:last-child) {
+  border-bottom: 1px solid $color-hover-sort-item;
+}
+
 .select-items div {
   padding: 8px 20px;
   font-weight: 400;
@@ -68,6 +83,7 @@
   font-size: 16px;
   line-height: 24px;
   color: $color-main;
+  border-radius: 4px;
 }
 
 /* Hide the items when the select box is closed: */
@@ -100,4 +116,12 @@
   width: 165px;
   position: relative;
   background: url("../../img/icons/bird-of-selector.svg") no-repeat right 10px center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-hover-sort-item;
+    border-radius: 4px;
+    outline: none;
+  }
 }

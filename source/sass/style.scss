@@ -3,7 +3,7 @@
 @import "global";
 @import "mixins";
 
-//blocks
+// blocks
 @import "blocks/container-main";
 @import "blocks/main-header";
 @import "blocks/promo";
@@ -13,5 +13,7 @@
 @import "blocks/form";
 @import "blocks/inputs-group";
 @import "blocks/custom-inputs";
-@import "blocks/custom-select";
 @import "blocks/goods";
+
+// libraries
+@import "libraries/custom-select";
