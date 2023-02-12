@@ -4,8 +4,17 @@
   padding: 40px 20px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 30px 30px 28px;
+    padding: 30px;
+    padding-top: 50px;
     min-width: 348px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 348px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 316px;
   }
 }
 

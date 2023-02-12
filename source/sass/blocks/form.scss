@@ -32,8 +32,13 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     column-gap: 30px;
-    margin-left: 178px;
+    margin-left: 178/(768-40)*100%;
     margin-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    column-gap: 18px;
   }
 }
 
@@ -64,6 +69,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 1px;
     min-width: 150px;
     min-height: 40px;
   }
