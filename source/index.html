@@ -245,27 +245,32 @@
               <div class="inputs-group__header">Страна произростания</div>
               <div class="custom-inputs custom-inputs--checkbox">
                 <label class="custom-inputs__label">
-                  <input class="custom-inputs__default-checkbox" type="checkbox" name="Brazil" value="Brazil" checked>
+                  <input class="custom-inputs__default-checkbox" type="checkbox" name="country-of-origin" value="Brazil"
+                    checked>
                   <span class="custom-inputs__custom-checkbox"></span>
                   <span class="custom-inputs__label-text">Бразилия</span>
                 </label>
                 <label class="custom-inputs__label">
-                  <input class="custom-inputs__default-checkbox" type="checkbox" name="Ethiopia" value="Ethiopia">
+                  <input class="custom-inputs__default-checkbox" type="checkbox" name="country-of-origin"
+                    value="Ethiopia">
                   <span class="custom-inputs__custom-checkbox"></span>
                   <span class="custom-inputs__label-text">Эфиопия</span>
                 </label>
                 <label class="custom-inputs__label">
-                  <input class="custom-inputs__default-checkbox" type="checkbox" name="Colombia" value="Colombia">
+                  <input class="custom-inputs__default-checkbox" type="checkbox" name="country-of-origin"
+                    value="Colombia">
                   <span class="custom-inputs__custom-checkbox"></span>
                   <span class="custom-inputs__label-text">Колумбия</span>
                 </label>
                 <label class="custom-inputs__label">
-                  <input class="custom-inputs__default-checkbox" type="checkbox" name="Costa-Rica" value="Costa-Rica">
+                  <input class="custom-inputs__default-checkbox" type="checkbox" name="country-of-origin"
+                    value="Costa-Rica">
                   <span class="custom-inputs__custom-checkbox"></span>
                   <span class="custom-inputs__label-text">Коста-Рика</span>
                 </label>
                 <label class="custom-inputs__label">
-                  <input class="custom-inputs__default-checkbox" type="checkbox" name="Peru" value="Peru" disabled>
+                  <input class="custom-inputs__default-checkbox" type="checkbox" name="country-of-origin" value="Peru"
+                    disabled>
                   <span class="custom-inputs__custom-checkbox"></span>
                   <span class="custom-inputs__label-text">Перу</span>
                 </label>
@@ -274,14 +279,51 @@
           </div>
 
           <div class="form__buttons-wrapper">
-            <button class="form__button" type="button">Применить фильтр</button>
+            <button class="form__button" type="submit">Применить фильтр</button>
             <button class="form__button form__button--reset" type="reset">Сбросить фильтр</button>
           </div>
         </form>
+
+        <div class="catalog__goods goods">
+          <div class="goods__custom-select-wrapper">
+            <div class="goods__label-select">
+              Сортировка:
+            </div>
+
+            <div class="goods__custom-select">
+              <select class="custom-select__without-js">
+                <option value="by-default">по умолчанию</option>
+                <option value="first-expensive">сначала дорогие</option>
+                <option value="first-cheap">сначала дешёвые</option>
+                <option value="high-rating">высокий рейтинг</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
       </div> <!-- container-main -->
     </section>
-    <select name="" id=""></select>
 
+    <div class="container-main" style="background-color: aquamarine;">
+      Промо блок — это слайдер (можно добавить скрин в ТЗ) Сверстать и оживить слайдер. Для оживления слайдера можно
+      использовать swiper.js
+      Изображение и название товара в каталоге — ссылки на страницу с описанием товара. Страницу с описанием товара
+      реализовывать не нужно.
+      Блок карты: необходимая реализация — интерактивная карта, ширина подстраивается под ширину вьюпорта (но не уже
+      контентной ширины макета), на карте размещён маркер, центр карты соответствует центру блока в макете. Карта
+      реализуется
+      сторонней библиотекой Leaflet.
+    </div>
+    <div class="container-main" style="background-color: aquamarine;">
+      Промо блок — это слайдер (можно добавить скрин в ТЗ) Сверстать и оживить слайдер. Для оживления слайдера можно
+      использовать swiper.js
+      Изображение и название товара в каталоге — ссылки на страницу с описанием товара. Страницу с описанием товара
+      реализовывать не нужно.
+      Блок карты: необходимая реализация — интерактивная карта, ширина подстраивается под ширину вьюпорта (но не уже
+      контентной ширины макета), на карте размещён маркер, центр карты соответствует центру блока в макете. Карта
+      реализуется
+      сторонней библиотекой Leaflet.
+    </div>
     <div class="container-main" style="background-color: aquamarine;">
       Промо блок — это слайдер (можно добавить скрин в ТЗ) Сверстать и оживить слайдер. Для оживления слайдера можно
       использовать swiper.js
@@ -299,6 +341,7 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/custom-select.js"></script>
 </body>
 
 </html>
