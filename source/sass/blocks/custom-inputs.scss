@@ -6,6 +6,10 @@
   &--checkbox {
     row-gap: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    row-gap: 20px;
+  }
 }
 
 
@@ -26,6 +30,7 @@
   border: 2px solid $color-placeholder;
   border-radius: 50%;
   background-color: $background-color-main;
+  flex-shrink: 0;
 }
 
 .custom-inputs__custom-checkbox {

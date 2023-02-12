@@ -16,8 +16,23 @@
 
 .catalog__form {
   margin-top: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .catalog__products {
   margin-top: 36px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.catalog__desktop-grid {
+  display: grid;
+  grid-template-columns: 318px 1fr;
+  gap: 30px;
+  margin-top: 40px;
 }
