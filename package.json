@@ -1,7 +1,7 @@
 {
-  "name": "sedona-26",
+  "name": "drink2go",
   "private": true,
-  "description": "Личный проект «Седона» от HTML Academy",
+  "description": "грейдирование в htmlacademy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",

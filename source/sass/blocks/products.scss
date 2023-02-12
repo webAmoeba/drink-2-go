@@ -12,3 +12,21 @@
   line-height: 24px;
   margin-right: 8px;
 }
+
+.products__products-list {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 26px;
+  }
+}
+
+
+
+.products__products-item {}
+
+
+.products__pagination {}
