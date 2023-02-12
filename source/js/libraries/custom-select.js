@@ -1,4 +1,4 @@
-document.querySelector('.goods__custom-select').classList.add('custom-select');
+document.querySelector('.products__custom-select').classList.add('custom-select');
 document.querySelector('.custom-select__without-js').removeAttribute('class');
 
 var x, i, j, l, ll, selElmnt, a, b, c;

@@ -284,13 +284,13 @@
           </div>
         </form>
 
-        <div class="catalog__goods goods">
-          <div class="goods__custom-select-wrapper">
-            <div class="goods__label-select">
+        <div class="catalog__products products">
+          <div class="products__custom-select-wrapper">
+            <div class="products__label-select">
               Сортировка:
             </div>
 
-            <div class="goods__custom-select">
+            <div class="products__custom-select">
               <select class="custom-select__without-js">
                 <option value="by-default">по умолчанию</option>
                 <option value="first-expensive">сначала дорогие</option>
@@ -300,46 +300,96 @@
             </div>
 
           </div>
+
+          <ul class="products__products-list reset-list">
+            <li class="products__products-item product-card">
+              <a class="product-card__link" href="#">
+                <picture>
+                  <img class="product-card__img" src="" alt="">
+                </picture>
+                <span class="product-card__name">Декаф Флэт Уайт</span>
+              </a>
+              <p class="product-card__descripion">
+                Кофе без кофеина из&nbsp;Эфиопии
+                с&nbsp;натуральным фермерским молоком
+              </p>
+              <div class="product-card__price-and-button">
+                <span class="product-card__price">225₽</span>
+                <button class="product-card__add-to-shop-cart" type="button">В корзину</button>
+              </div>
+            </li>
+          </ul>
+
+          <div class="products__pagination pagination">
+            <button class="pagination__button pagination__button--back">
+              <span class="pagination__button-description">Назад</span>
+            </button>
+            <ol class="pagination__page-numbers reset-list">
+              <li class="pagination__page-number">1</li>
+              <li class="pagination__page-number">2</li>
+              <li class="pagination__page-number">3</li>
+            </ol>
+            <button class="pagination__button pagination__button--next">
+              <span class="pagination__button-description">Вперёд</span>
+            </button>
+          </div>
         </div>
       </div> <!-- container-main -->
     </section>
 
-    <div>
-      <div class="container-main" style="background-color: aquamarine;">
-        Промо блок — это слайдер (можно добавить скрин в ТЗ) Сверстать и оживить слайдер. Для оживления слайдера можно
-        использовать swiper.js
-        Изображение и название товара в каталоге — ссылки на страницу с описанием товара. Страницу с описанием товара
-        реализовывать не нужно.
-        Блок карты: необходимая реализация — интерактивная карта, ширина подстраивается под ширину вьюпорта (но не уже
-        контентной ширины макета), на карте размещён маркер, центр карты соответствует центру блока в макете. Карта
-        реализуется
-        сторонней библиотекой Leaflet.
-      </div>
-      <div class="container-main" style="background-color: aquamarine;">
-        Промо блок — это слайдер (можно добавить скрин в ТЗ) Сверстать и оживить слайдер. Для оживления слайдера можно
-        использовать swiper.js
-        Изображение и название товара в каталоге — ссылки на страницу с описанием товара. Страницу с описанием товара
-        реализовывать не нужно.
-        Блок карты: необходимая реализация — интерактивная карта, ширина подстраивается под ширину вьюпорта (но не уже
-        контентной ширины макета), на карте размещён маркер, центр карты соответствует центру блока в макете. Карта
-        реализуется
-        сторонней библиотекой Leaflet.
-      </div>
-      <div class="container-main" style="background-color: aquamarine;">
-        Промо блок — это слайдер (можно добавить скрин в ТЗ) Сверстать и оживить слайдер. Для оживления слайдера можно
-        использовать swiper.js
-        Изображение и название товара в каталоге — ссылки на страницу с описанием товара. Страницу с описанием товара
-        реализовывать не нужно.
-        Блок карты: необходимая реализация — интерактивная карта, ширина подстраивается под ширину вьюпорта (но не уже
-        контентной ширины макета), на карте размещён маркер, центр карты соответствует центру блока в макете. Карта
-        реализуется
-        сторонней библиотекой Leaflet.
-      </div>
-    </div>
+    <div class="map">map</div>
   </main>
 
-  <footer>
-    <a href="https://htmlacademy.ru/intensive/adaptive"></a>
+  <footer class="footer-main">
+    <a href=""></a>
+    <div class="footer-main__first-line">
+      <a class="footer-main__logo-link" href="index.html"></a>
+      <ul class="footer-main__social-links reset-list">
+        <li class="footer-main__social-item">
+          <a href="" class="footer-main__social-link">
+            <span class="visually-hidden">вконтакте</span>
+          </a>
+        </li>
+        <li class="footer-main__social-item">
+          <a href="" class="footer-main__social-link">
+            <span class="visually-hidden">пинтерест</span>
+          </a>
+        </li>
+        <li class="footer-main__social-item">
+          <a href="" class="footer-main__social-link">
+            <span class="visually-hidden">одноклассники</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-main__about">
+      <section class="footer-main__shop">
+        <h2 class="footer-main__about-header">Интернет-магазин</h2>
+        <a class="footer-main__about-link" href="#">каталог</a>
+        <a class="footer-main__about-link" href="#">доставка</a>
+        <a class="footer-main__about-link" href="#">способы оплаты</a>
+        <a class="footer-main__about-link" href="#">о нас</a>
+      </section>
+      <section class="footer-main__media">
+        <h2 class="footer-main__about-header">Медиа</h2>
+        <a class="footer-main__about-link" href="#">блог</a>
+        <a class="footer-main__about-link" href="#">информация для сми</a>
+        <a class="footer-main__about-link" href="#">правовая информация</a>
+      </section>
+      <section class="footer-main__contacts">
+        <h2 class="footer-main__about-header">Контакты</h2>
+        <a class="footer-main__about-link" href="">Санкт-Петербург, набережная реки Карповки,
+          дом 5</a>
+        <a class="footer-main__about-link" href="tel:+79999999999">+7 (999) 999-99-99</a>
+      </section>
+    </div>
+
+    <div class="footer-main__created-by">
+      <span>Разработано в</span>
+      <a class="footer-main__created-link" href="https://htmlacademy.ru/intensive/adaptive"><span lang="en
+        ">HTML Academy</span></a>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
