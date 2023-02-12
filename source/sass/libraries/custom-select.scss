@@ -4,7 +4,7 @@
 /* The container must be positioned relative: */
 .custom-select {
   position: relative;
-  width: 165px;
+  min-width: 165px;
 }
 
 .custom-select select {
