@@ -1,6 +1,11 @@
 .pagination {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+    column-gap: 20px;
+  }
 }
 
 .pagination__button,
