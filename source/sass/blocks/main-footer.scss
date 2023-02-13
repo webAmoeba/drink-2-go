@@ -1,20 +1,26 @@
-.footer-main {}
+.main-footer {}
 
-.footer-main__first-line>.container-main {
+.main-footer__first-line>.container-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
-.footer-main__first-line {
+.main-footer__first-line {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   @media (max-width: ($tablet-width - 1)) {
     border-bottom: $color-hover-sort-item solid 1px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
 }
 
-.footer-main__logo-link {}
+.main-footer__logo-link {}
 
 .main-header__logo-link {}
 
@@ -22,15 +28,15 @@
 
 .main-header__logo-link-description {}
 
-.footer-main__social-links {
+.main-footer__social-links {
   display: flex;
   align-items: center;
   column-gap: 20px;
 }
 
-.footer-main__social-item {}
+.main-footer__social-item {}
 
-.footer-main__social-link {
+.main-footer__social-link {
   width: 40px;
   height: 40px;
   display: flex;
@@ -38,28 +44,35 @@
   align-items: center;
 }
 
-.footer-main__social-svg {
+.main-footer__social-svg {
   fill: $color-placeholder;
 }
 
 .visually-hidden {}
 
-.footer-main__about {}
+.main-footer__about {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    @include container-main;
+  }
+}
 
-.footer-main__section-about {
-  padding: 20px;
-  padding-bottom: 28px;
+.main-footer__section-about {
   display: flex;
   flex-direction: column;
 
   @media (max-width: ($tablet-width - 1)) {
+    padding: 20px;
+    padding-bottom: 28px;
     border-bottom: $color-hover-sort-item solid 1px;
   }
 }
 
-.footer-main__shop {}
+.main-footer__shop {}
 
-.footer-main__about-header {
+.main-footer__about-header {
   margin: 0;
   font-weight: 700;
   font-size: 14px;
@@ -68,7 +81,7 @@
   color: $color-base-primary;
 }
 
-.footer-main__about-link {
+.main-footer__about-link {
   margin-top: 20px;
   font-weight: 500;
   font-size: 12px;
@@ -77,6 +90,7 @@
   text-transform: uppercase;
 
   &--address {
+    position: relative;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -86,13 +100,20 @@
   }
 }
 
-.footer-main__media {}
+.main-footer__media {}
 
-.footer-main__contacts {
+.main-footer__contacts {
   padding-bottom: 20px;
 }
 
-.footer-main__created-by {
+.main-footer__phone-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: $color-base-primary
+}
+
+.main-footer__created-by {
   padding: 20px;
   padding-bottom: 30px;
   display: flex;
@@ -102,14 +123,19 @@
   font-size: 12px;
   line-height: 16px;
   color: $color-placeholder;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
 }
 
-.footer-main__created-link {
+.main-footer__created-link {
   display: flex;
   align-items: center;
 }
 
-.footer-main__academy-logo {
+.main-footer__academy-logo {
   fill: $color-placeholder;
   margin-left: 4px;
 }

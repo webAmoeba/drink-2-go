@@ -1,10 +1,3 @@
 .container-main {
-  margin-left: $mobile-indent;
-  margin-right: $mobile-indent;
-
-  @media (min-width: $desktop-width) {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1360px;
-  }
+  @include container-main;
 }

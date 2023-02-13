@@ -79,6 +79,10 @@
   background-color: $background-color-main;
   color: $color-base-primary;
 
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
+    min-width: 140px;
+  }
+
   &:hover,
   &:focus,
   &:active,
