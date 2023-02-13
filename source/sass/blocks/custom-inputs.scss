@@ -31,6 +31,7 @@
   border-radius: 50%;
   background-color: $background-color-main;
   flex-shrink: 0;
+  position: relative;
 }
 
 .custom-inputs__custom-checkbox {
@@ -91,35 +92,6 @@
   margin-left: 10px;
 }
 
-//////////////////////////////////                                                                                 F O C U S        (НАЧАЛО)
-.custom-inputs__label:focus-within {
-  .custom-inputs__custom-radio {
-    border-color: $color-base-primary;
-    position: relative;
-
-    &::before {
-      background-color: rgba($color-base-primary, 0.25);
-      position: absolute;
-      content: "";
-      width: 16px;
-      height: 16px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-    }
-  }
-}
-
-.custom-inputs__label:focus-within {
-  .custom-inputs__custom-checkbox {
-    border-color: $color-base-primary;
-    background-color: rgba($color-base-primary-lighter, 0.25);
-  }
-}
-
-//////////////////////////////////                                                                                 F O C U S        (КОНЕЦ)
-
 
 .custom-inputs__label {
   display: flex;
@@ -127,38 +99,42 @@
   font-size: 16px;
   line-height: 24px;
   cursor: pointer;
-
-  //////////////////////////////////                                                                                 H O V E R        (НАЧАЛО)
-  &:hover .custom-inputs__custom-radio {
-    border-color: $color-base-primary;
-    position: relative;
-
-    &::before {
-      background-color: rgba($color-base-primary, 0.25);
-      position: absolute;
-      content: "";
-      width: 16px;
-      height: 16px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-    }
-  }
-
-  &:hover .custom-inputs__custom-checkbox {
-    border-color: $color-base-primary;
-    background-color: rgba($color-base-primary-lighter, 0.25);
-  }
-
-  //////////////////////////////////                                                                                 H O V E R        (КОНЕЦ)
 }
+
+//////////////////////////////////                                                                                 H O V E R        F O C U S        (НАЧАЛО)
+.custom-inputs__default-radio:hover~.custom-inputs__custom-radio,
+.custom-inputs__default-radio:focus-visible~.custom-inputs__custom-radio {
+  outline-offset: 0px;
+  outline: $color-base-primary-lighter auto 2px;
+
+  &::before {
+    background-color: rgba($color-base-primary, 0.25);
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+}
+
+
+.custom-inputs__default-checkbox:hover~.custom-inputs__custom-checkbox,
+.custom-inputs__default-checkbox:focus-visible~.custom-inputs__custom-checkbox {
+  outline-offset: 0px;
+  outline: $color-base-primary-lighter auto 2px;
+  background-color: rgba($color-base-primary-lighter, 0.25);
+}
+
+//////////////////////////////////                                                                                 H O V E R        F O C U S        (конец)
 
 
 
 //////////////////////////////////                                                                                 D I S A B L E D        (НАЧАЛО)
 .custom-inputs__default-radio:disabled~.custom-inputs__custom-radio {
-  border-color: $color-disabled;
+  outline: none;
   background-color: transparent;
 
   &::before {
@@ -173,12 +149,12 @@
 }
 
 .custom-inputs__default-checkbox:disabled~.custom-inputs__custom-checkbox {
-  border-color: $color-disabled;
+  outline: none;
   background-color: $color-disabled;
 }
 
 .custom-inputs__default-checkbox:checked:disabled~.custom-inputs__custom-checkbox {
-  border-color: $color-disabled;
+  outline: none;
   background-color: $color-disabled;
 
   &::before {
