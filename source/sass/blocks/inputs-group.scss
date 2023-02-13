@@ -44,6 +44,7 @@
 }
 
 .inputs-group__range {
+  position: relative;
   width: 24px;
   height: 24px;
   border: 2px solid $color-base-primary-lighter;
@@ -51,6 +52,37 @@
   background-color: $background-color-main;
   flex-shrink: 0;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background-color: rgba($color-base-primary, 0.25);
+    }
+
+    outline: none;
+  }
+
+  &:active {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      background-color: $color-base-primary;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+  }
 
   &--left {
     margin-left: 0;
@@ -94,11 +126,6 @@
   @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
     min-width: unset;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   width: 110px;
-  //   min-width: 110px;
-  // }
 }
 
 .inputs-group__number-input {
@@ -119,6 +146,11 @@
   appearance: textfield;
   margin: 0;
 
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
+
   &::placeholder {
     color: $color-placeholder;
   }
@@ -128,9 +160,16 @@
     max-width: 92px;
   }
 
-  // @media (min-width: $desktop-width) {
-  //   width: 110px;
-  // }
+  &:focus-visible {
+    outline-offset: 0px;
+    outline: $primary-darker auto 1px;
+  }
+
+  &:disabled {
+    outline-offset: 0px;
+    outline: $color-disabled auto 1px;
+    color: $color-placeholder;
+  }
 }
 
 .inputs-group__between-number-inputs {
