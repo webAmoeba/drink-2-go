@@ -126,14 +126,21 @@
                   <div class="promo__price-and-order">
                     <span class="promo__old-price">295₽</span>
                     <span class="promo__price">225₽</span>
-                    <button class="promo__order-button" type="button">Заказать</button>
+                    <a class="promo__order-button" href="#">Заказать</a>
                   </div>
                 </div>
-                <button class="promo__slider-button promo__slider-button--left">
+                <button class="promo__slider-button promo__slider-button--left" type="button">
                   <span class="visually-hidden">Слайд влево</span>
+                  <svg class="promo__button-icon" width="11" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#slider-button-icon"></use>
+                  </svg>
                 </button>
-                <button class="promo__slider-button promo__slider-button--right">
+                <button class="promo__slider-button promo__slider-button--right" type="button">
                   <span class="visually-hidden">Слайд вправо</span>
+                  <svg class="promo__button-icon promo__button-icon--to-right" width="11" height="20"
+                    aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#slider-button-icon"></use>
+                  </svg>
                 </button>
               </section>
             </li>
@@ -436,7 +443,7 @@
               <button class="pagination__button pagination__button--back">
                 <span class="pagination__button-description">Назад</span>
                 <svg class="pagination__button-icon" width="10" height="6" aria-hidden="true">
-                  <use class="" xlink:href="img/sprite.svg#bird-of-selector"></use>
+                  <use xlink:href="img/sprite.svg#bird-of-selector"></use>
                 </svg>
               </button>
               <ol class="pagination__page-numbers reset-list">
@@ -448,7 +455,7 @@
                 <span class="pagination__button-description">Вперёд</span>
                 <svg class="pagination__button-icon pagination__button-icon--right" width="10" height="6"
                   aria-hidden="true">
-                  <use class="" xlink:href="img/sprite.svg#bird-of-selector"></use>
+                  <use xlink:href="img/sprite.svg#bird-of-selector"></use>
                 </svg>
               </button>
             </div>

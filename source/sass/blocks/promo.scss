@@ -200,27 +200,36 @@
   background-color: transparent;
   cursor: pointer;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 11px;
-    height: 20px;
-    background-image: url("../img/icons/slider-button.svg");
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
   &--left {
     left: 0;
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+      outline: none;
+    }
+
+    &:active {
+      background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+    }
   }
 
   &--right {
     right: 0;
 
-    &::before {
-      transform: translate(-50%, -50%) scale(-1, 1);
+    &:hover,
+    &:focus {
+      background: linear-gradient(-90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+      outline: none;
     }
+
+    &:active {
+      background: linear-gradient(-90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+    }
+  }
+
+  &:disabled>.promo__button-icon {
+    fill: $color-placeholder;
   }
 
   @media (min-width: $tablet-width) {
@@ -230,5 +239,19 @@
 
   @media (min-width: $desktop-width) {
     height: 100%;
+  }
+}
+
+.promo__button-icon {
+  position: absolute;
+  width: 11px;
+  height: 20px;
+  fill: $color-base-primary;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+
+  &--to-right {
+    transform: translate(-50%, -50%) rotate(180deg);
   }
 }

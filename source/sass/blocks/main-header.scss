@@ -126,10 +126,10 @@
   position: relative;
 
   @media (max-width: ($tablet-width - 1)) {
-    border-top: 1px solid $secondary-primaryu;
+    border-top: 1px solid $secondary-primary;
 
     &:last-child {
-      border-bottom: 1px solid $secondary-primaryu;
+      border-bottom: 1px solid $secondary-primary;
     }
   }
 
