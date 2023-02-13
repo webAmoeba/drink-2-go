@@ -26,7 +26,7 @@
   padding-bottom: 20px;
 
   @media (max-width: ($tablet-width - 1)) {
-    border-bottom: $color-hover-sort-item solid 1px;
+    border-bottom: $secondary-primary solid 1px;
   }
 
   @media (min-width: $tablet-width) {
@@ -55,7 +55,6 @@
 
 .main-header__logo {}
 
-.main-header__logo-link-description {}
 
 .main-footer__social-links {
   display: flex;
@@ -103,7 +102,7 @@
   @media (max-width: ($tablet-width - 1)) {
     padding: 20px;
     padding-bottom: 28px;
-    border-bottom: $color-hover-sort-item solid 1px;
+    border-bottom: $secondary-primary solid 1px;
   }
 }
 

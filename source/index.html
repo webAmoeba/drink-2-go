@@ -28,19 +28,20 @@
 <body>
   <header class="main-header container-main">
     <div class="main-header__wrapper">
-      <a class="main-header__logo-link" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/main-logo/desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/main-logo/tablet.svg">
-          <img class="main-header__logo" src="img/main-logo/mobile.svg" width="32" height="36"
-            alt="Логотип и ссылка на главную страницу.">
-        </picture>
-
+      <div class="main-header__logo-link-wrapper">
+        <a class="main-header__logo-link" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/main-logo/desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/main-logo/tablet.svg">
+            <img class="main-header__logo" src="img/main-logo/mobile.svg" width="32" height="36"
+              alt="Логотип и ссылка на главную страницу.">
+          </picture>
+        </a>
         <span class="main-header__logo-link-description">
           Интернет-магазин
           кофейных напитков
         </span>
-      </a>
+      </div>
 
       <!--
         Классы для обработки навигатора джаваскриптом:
@@ -125,7 +126,7 @@
                   <div class="promo__price-and-order">
                     <span class="promo__old-price">295₽</span>
                     <span class="promo__price">225₽</span>
-                    <button class="promo__order-button">Заказать</button>
+                    <button class="promo__order-button" type="button">Заказать</button>
                   </div>
                 </div>
                 <button class="promo__slider-button promo__slider-button--left">

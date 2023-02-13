@@ -151,6 +151,20 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-base-primary-lighter;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-active;
+  }
+
+  &:disabled {
+    background-color: $color-placeholder;
+  }
 }
 
 .promo__picture {
