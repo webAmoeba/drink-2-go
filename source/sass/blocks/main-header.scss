@@ -126,10 +126,10 @@
   position: relative;
 
   @media (max-width: ($tablet-width - 1)) {
-    border-top: 1px solid $border-menu;
+    border-top: 1px solid $secondary-primaryu;
 
     &:last-child {
-      border-bottom: 1px solid $border-menu;
+      border-bottom: 1px solid $secondary-primaryu;
     }
   }
 
@@ -171,10 +171,6 @@
   &:active {
     background-color: $secondary-primary;
   }
-
-  &:disabled {
-    background-color: $color-placeholder;
-  }
 }
 
 .main-header__user-buttons {
@@ -200,13 +196,32 @@
   border: none;
   background-color: inherit;
 
+  &:hover,
+  &:focus {
+    color: $color-base-primary;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $secondary-primary;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 80px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 20px;
+
+    &:hover>.main-header__user-icon,
+    &:focus>.main-header__user-icon {
+      fill: $color-base-primary;
+    }
   }
+}
+
+.main-header__user-icon {
+  fill: $color-main;
 }
 
 .main-header__user-button-description {
