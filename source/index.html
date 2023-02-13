@@ -456,58 +456,88 @@
       </div> <!-- container-main -->
     </section>
 
-    <div class="map">map</div>
+
+    <div class="map" style="height: 420px;background-color: aquamarine;">map</div>
   </main>
 
   <footer class="footer-main">
-    <a href=""></a>
+
     <div class="footer-main__first-line">
-      <a class="footer-main__logo-link" href="index.html"></a>
-      <ul class="footer-main__social-links reset-list">
-        <li class="footer-main__social-item">
-          <a href="" class="footer-main__social-link">
-            <span class="visually-hidden">вконтакте</span>
-          </a>
-        </li>
-        <li class="footer-main__social-item">
-          <a href="" class="footer-main__social-link">
-            <span class="visually-hidden">пинтерест</span>
-          </a>
-        </li>
-        <li class="footer-main__social-item">
-          <a href="" class="footer-main__social-link">
-            <span class="visually-hidden">одноклассники</span>
-          </a>
-        </li>
-      </ul>
+      <div class="container-main">
+        <a class="footer-main__logo-link main-header__logo-link" href="index.html">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/main-logo/desktop.svg">
+            <img class="main-header__logo" src="img/main-logo/tablet.svg" width="82" height="36"
+              alt="Логотип и ссылка на главную страницу.">
+          </picture>
+          <span class="main-header__logo-link-description">
+            Интернет-магазин
+            кофейных напитков
+          </span>
+        </a>
+        <ul class="footer-main__social-links reset-list">
+          <li class="footer-main__social-item">
+            <a href="" class="footer-main__social-link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">вконтакте</span>
+              <svg class="footer-main__social-svg" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-main__social-item">
+            <a class="footer-main__social-link" href="https://ru.pinterest.com/keks_is_html_academy/">
+              <span class="visually-hidden">пинтерест</span>
+              <svg class="footer-main__social-svg" width="22" height="22" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#pinterest"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-main__social-item">
+            <a class="footer-main__social-link" href="https://goo.su/k0Mzn">
+              <span class="visually-hidden">одноклассники</span>
+              <svg class="footer-main__social-svg" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#ok"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="footer-main__about">
-      <section class="footer-main__shop">
+      <section class="footer-main__section-about footer-main__shop">
         <h2 class="footer-main__about-header">Интернет-магазин</h2>
         <a class="footer-main__about-link" href="#">каталог</a>
         <a class="footer-main__about-link" href="#">доставка</a>
         <a class="footer-main__about-link" href="#">способы оплаты</a>
         <a class="footer-main__about-link" href="#">о нас</a>
       </section>
-      <section class="footer-main__media">
+      <section class="footer-main__section-about footer-main__media">
         <h2 class="footer-main__about-header">Медиа</h2>
         <a class="footer-main__about-link" href="#">блог</a>
         <a class="footer-main__about-link" href="#">информация для сми</a>
         <a class="footer-main__about-link" href="#">правовая информация</a>
       </section>
-      <section class="footer-main__contacts">
+      <section class="footer-main__section-about footer-main__contacts">
         <h2 class="footer-main__about-header">Контакты</h2>
-        <a class="footer-main__about-link" href="">Санкт-Петербург, набережная реки Карповки,
+        <a class="footer-main__about-link footer-main__about-link--address" href="">Санкт-Петербург, набережная реки
+          Карповки,
           дом 5</a>
-        <a class="footer-main__about-link" href="tel:+79999999999">+7 (999) 999-99-99</a>
+        <a class="footer-main__about-link footer-main__about-link--address" href="tel:+79999999999">+7 (999)
+          999-99-99</a>
       </section>
     </div>
 
     <div class="footer-main__created-by">
       <span>Разработано в</span>
-      <a class="footer-main__created-link" href="https://htmlacademy.ru/intensive/adaptive"><span lang="en
-        ">HTML Academy</span></a>
+      <a class="footer-main__created-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span lang="en">
+          &nbsp;HTML Academy
+        </span>
+        <svg class="footer-main__academy-logo" width="12" height="16" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#htmlacademy"></use>
+        </svg>
+      </a>
     </div>
   </footer>
 

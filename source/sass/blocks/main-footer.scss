@@ -1,0 +1,115 @@
+.footer-main {}
+
+.footer-main__first-line>.container-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-main__first-line {
+  @media (max-width: ($tablet-width - 1)) {
+    border-bottom: $color-hover-sort-item solid 1px;
+  }
+}
+
+.footer-main__logo-link {}
+
+.main-header__logo-link {}
+
+.main-header__logo {}
+
+.main-header__logo-link-description {}
+
+.footer-main__social-links {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.footer-main__social-item {}
+
+.footer-main__social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-main__social-svg {
+  fill: $color-placeholder;
+}
+
+.visually-hidden {}
+
+.footer-main__about {}
+
+.footer-main__section-about {
+  padding: 20px;
+  padding-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: ($tablet-width - 1)) {
+    border-bottom: $color-hover-sort-item solid 1px;
+  }
+}
+
+.footer-main__shop {}
+
+.footer-main__about-header {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: $color-base-primary;
+}
+
+.footer-main__about-link {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  &--address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: none;
+
+    padding-left: 18px;
+  }
+}
+
+.footer-main__media {}
+
+.footer-main__contacts {
+  padding-bottom: 20px;
+}
+
+.footer-main__created-by {
+  padding: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-placeholder;
+}
+
+.footer-main__created-link {
+  display: flex;
+  align-items: center;
+}
+
+.footer-main__academy-logo {
+  fill: $color-placeholder;
+  margin-left: 4px;
+}
