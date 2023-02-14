@@ -18,3 +18,23 @@ menuToggler.addEventListener('click', () => {
     menuToggler.classList.add('main-header__menu-toggler--closed');
   }
 });
+
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    clickableClass: 'swiper-pagination-clickable',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.promo__slider-button--left',
+    prevEl: '.promo__slider-button--right',
+  },
+});

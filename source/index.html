@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>drink2go</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -94,9 +95,9 @@
       <h2 class="visually-hidden">Промо-слайдер</h2>
 
       <div class="promo__slider-wrapper">
-        <div class="promo__slider">
-          <ul class="promo__list reset-list">
-            <li class="promo__item">
+        <div class="swiper promo__slider">
+          <ul class="swiper-wrapper promo__list reset-list">
+            <li class="swiper-slide promo__item">
               <section class="promo__item-section">
                 <picture class="promo__picture">
                   <source media="(min-width: 1440px)"
@@ -130,7 +131,7 @@
                 </div>
               </section>
             </li>
-            <li class="swiper-slide swiper-slide promo__item">
+            <li class="swiper-slide promo__item">
               <section class="promo__item-section">
                 <picture class="promo__picture">
                   <source media="(min-width: 1440px)"
@@ -164,7 +165,7 @@
                 </div>
               </section>
             </li>
-            <li class="swiper-slide swiper-slide promo__item">
+            <li class="swiper-slide promo__item">
               <section class="promo__item-section">
                 <picture class="promo__picture">
                   <source media="(min-width: 1440px)"
@@ -199,6 +200,9 @@
               </section>
             </li>
           </ul>
+
+          <div class="swiper-pagination product__pagination"></div>
+
 
           <button class="promo__slider-button promo__slider-button--left" type="button">
             <span class="visually-hidden">Слайд влево</span>
@@ -626,7 +630,8 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/main.js" type="module"></script>
   <script src="js/libraries/custom-select.js"></script>
 </body>
 
