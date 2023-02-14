@@ -2,11 +2,11 @@
   position: relative;
   padding-top: 20px;
   padding-bottom: 60px;
-  background-color: $background-color-promo;
+  background-color: $background-promo-flat-white;
 
   @media (min-width: $tablet-width) {
     @media (max-width: ($desktop-width - 1)) {
-      background-image: linear-gradient($background-color-promo, 640px, #ffffff 640px);
+      background-image: linear-gradient($background-promo-flat-white, 640px, #ffffff 640px);
     }
 
     padding-top: 56px;
