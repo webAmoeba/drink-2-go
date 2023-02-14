@@ -31,7 +31,7 @@
 }
 
 .promo-empty {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
     height: 188px;
     background-color: $background-color-main;
   }
@@ -44,7 +44,7 @@
   padding-top: 20px;
   padding-bottom: 60px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
     display: flex;
     flex-direction: column;
     padding-top: 58px;
@@ -55,20 +55,31 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 15px;
+    width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 14px;
+    padding-top: 30px;
+    padding-bottom: 84px;
   }
 }
 
-.promo__picture {}
+.promo__picture {
+  @media (min-width: $desktop-width) {
+    width: 600px;
+    flex-shrink: 0;
+  }
+}
 
 .promo__img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
     width: 476px;
     height: 476px;
     margin-top: 20px;
@@ -217,7 +228,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 
   .swiper-pagination-bullet-active {
@@ -276,13 +287,15 @@
     height: 640px;
   }
 
+
   @media (min-width: $desktop-width) {
     height: 100%;
     width: 100%;
 
     &--left {
       left: unset;
-      right: 1360px;
+      right: 50%;
+      margin-right: 630px;
 
       &>.promo__button-icon {
         top: 50%;
@@ -294,7 +307,8 @@
 
     &--right {
       right: unset;
-      left: 1360px;
+      left: 50%;
+      margin-left: 630px;
 
       &>.promo__button-icon {
         top: 50%;
