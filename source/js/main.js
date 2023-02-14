@@ -1,3 +1,5 @@
+import './map.js';
+
 const menu = document.querySelector('.main-header__navigation');
 const menuToggler = document.querySelector('.main-header__menu-toggler');
 
