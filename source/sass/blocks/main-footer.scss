@@ -1,5 +1,3 @@
-.main-footer {}
-
 .main-footer__desktop-grid {
   @media (min-width: $desktop-width) {
     @include container-main;
@@ -8,7 +6,7 @@
   }
 }
 
-.main-footer__first-line>.container-main {
+.main-footer__first-line > .container-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,7 +48,6 @@
 }
 
 .main-footer__logo-link {
-
   &:hover,
   &:focus-visible {
     opacity: 0.6;
@@ -62,11 +59,6 @@
   }
 }
 
-.main-header__logo-link {}
-
-.main-header__logo {}
-
-
 .main-footer__social-links {
   display: flex;
   align-items: center;
@@ -77,7 +69,6 @@
   }
 }
 
-.main-footer__social-item {}
 
 .main-footer__social-link {
   width: 40px;
@@ -90,12 +81,12 @@
     outline: none;
   }
 
-  &:hover>.main-footer__social-svg,
-  &:focus-visible>.main-footer__social-svg {
+  &:hover > .main-footer__social-svg,
+  &:focus-visible > .main-footer__social-svg {
     fill: $color-base-primary;
   }
 
-  &:active>.main-footer__social-svg {
+  &:active > .main-footer__social-svg {
     fill: $primary-darker;
   }
 }
@@ -104,13 +95,13 @@
   fill: $color-placeholder;
 }
 
-.visually-hidden {}
 
 .main-footer__about {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+
     @include container-main;
   }
 
@@ -130,7 +121,6 @@
   }
 }
 
-.main-footer__shop {}
 
 .main-footer__about-header {
   margin: 0;
@@ -170,7 +160,6 @@
   }
 }
 
-.main-footer__media {}
 
 .main-footer__contacts {
   padding-bottom: 20px;
@@ -180,7 +169,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  fill: $color-base-primary
+  fill: $color-base-primary;
 }
 
 .main-footer__created-by {
@@ -214,9 +203,6 @@
     outline: none;
   }
 
-  &:active {
-    color: $primary-darker;
-  }
 
   &:hover .main-footer__academy-logo,
   &:focus-visible .main-footer__academy-logo {

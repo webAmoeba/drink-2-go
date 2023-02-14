@@ -1,21 +1,3 @@
-.promo {}
-
-.visually-hidden {}
-
-.promo__slider-wrapper {}
-
-.swiper {}
-
-.promo__slider {}
-
-.swiper-wrapper {}
-
-.promo__list {}
-
-.reset-list {}
-
-.swiper-slide {}
-
 .promo__item {
   &--first {
     background-color: $background-promo-flat-white;
@@ -204,8 +186,6 @@
   }
 }
 
-.swiper-pagination {}
-
 .promo__pagination {
   display: none;
 
@@ -236,8 +216,6 @@
   }
 }
 
-.promo__button-icon {}
-
 .promo__slider-button {
   position: absolute;
   top: 0;
@@ -255,7 +233,7 @@
 
     &:hover,
     &:focus-visible {
-      background: linear-gradient(-90deg, rgba(120, 89, 207, 0) 0%, #FFFFFF 80px);
+      background: linear-gradient(-90deg, rgba(120, 89, 207, 0) 0%, #ffffff 80px);
       outline: none;
     }
 
@@ -269,7 +247,7 @@
 
     &:hover,
     &:focus-visible {
-      background: linear-gradient(90deg, rgba(120, 89, 207, 0) 0%, #FFFFFF 80px);
+      background: linear-gradient(90deg, rgba(120, 89, 207, 0) 0%, #ffffff 80px);
       outline: none;
     }
 
@@ -278,7 +256,7 @@
     }
   }
 
-  &:disabled>.promo__button-icon {
+  &:disabled > .promo__button-icon {
     fill: $color-placeholder;
   }
 
@@ -297,7 +275,7 @@
       right: 50%;
       margin-right: 630px;
 
-      &>.promo__button-icon {
+      & > .promo__button-icon {
         top: 50%;
         left: unset;
         right: 34px;
@@ -310,7 +288,7 @@
       left: 50%;
       margin-left: 630px;
 
-      &>.promo__button-icon {
+      & > .promo__button-icon {
         top: 50%;
         right: unset;
         left: 34px;

@@ -12,14 +12,11 @@
   }
 }
 
-
-
 .custom-inputs__default-radio,
 .custom-inputs__default-checkbox {
   position: absolute;
   appearance: none;
 }
-
 
 
 //////////////////////////////////                                                                                 КАСТОМНЫЕ РАДИО И ЧЕКБОКСЫ В СТОКЕ (НАЧАЛО)
@@ -57,7 +54,7 @@
 
 
 //////////////////////////////////                                                                                 CHECKED (НАЧАЛО)
-.custom-inputs__default-radio:checked~.custom-inputs__custom-radio {
+.custom-inputs__default-radio:checked ~ .custom-inputs__custom-radio {
   position: relative;
   border-color: $color-base-primary;
 
@@ -74,7 +71,7 @@
   }
 }
 
-.custom-inputs__default-checkbox:checked~.custom-inputs__custom-checkbox {
+.custom-inputs__default-checkbox:checked ~ .custom-inputs__custom-checkbox {
   background-color: $color-base-primary-lighter;
   border-color: $color-base-primary;
 
@@ -85,7 +82,6 @@
 }
 
 //////////////////////////////////                                                                                 CHECKED (КОНЕЦ)
-
 
 
 .custom-inputs__label-text {
@@ -102,9 +98,9 @@
 }
 
 //////////////////////////////////                                                                                 H O V E R        F O C U S        (НАЧАЛО)
-.custom-inputs__default-radio:hover~.custom-inputs__custom-radio,
-.custom-inputs__default-radio:focus-visible~.custom-inputs__custom-radio {
-  outline-offset: 0px;
+.custom-inputs__default-radio:hover ~ .custom-inputs__custom-radio,
+.custom-inputs__default-radio:focus-visible ~ .custom-inputs__custom-radio {
+  outline-offset: 0;
   outline: $color-base-primary-lighter auto 2px;
 
   &::before {
@@ -121,9 +117,9 @@
 }
 
 
-.custom-inputs__default-checkbox:hover~.custom-inputs__custom-checkbox,
-.custom-inputs__default-checkbox:focus-visible~.custom-inputs__custom-checkbox {
-  outline-offset: 0px;
+.custom-inputs__default-checkbox:hover ~ .custom-inputs__custom-checkbox,
+.custom-inputs__default-checkbox:focus-visible ~ .custom-inputs__custom-checkbox {
+  outline-offset: 0;
   outline: $color-base-primary-lighter auto 2px;
   background-color: rgba($color-base-primary-lighter, 0.25);
 }
@@ -131,9 +127,8 @@
 //////////////////////////////////                                                                                 H O V E R        F O C U S        (конец)
 
 
-
 //////////////////////////////////                                                                                 D I S A B L E D        (НАЧАЛО)
-.custom-inputs__default-radio:disabled~.custom-inputs__custom-radio {
+.custom-inputs__default-radio:disabled ~ .custom-inputs__custom-radio {
   outline: none;
   background-color: transparent;
 
@@ -142,18 +137,18 @@
   }
 }
 
-.custom-inputs__default-radio:checked:disabled~.custom-inputs__custom-radio {
+.custom-inputs__default-radio:checked:disabled ~ .custom-inputs__custom-radio {
   &::before {
     background-color: $color-disabled;
   }
 }
 
-.custom-inputs__default-checkbox:disabled~.custom-inputs__custom-checkbox {
+.custom-inputs__default-checkbox:disabled ~ .custom-inputs__custom-checkbox {
   outline: none;
   background-color: $color-disabled;
 }
 
-.custom-inputs__default-checkbox:checked:disabled~.custom-inputs__custom-checkbox {
+.custom-inputs__default-checkbox:checked:disabled ~ .custom-inputs__custom-checkbox {
   outline: none;
   background-color: $color-disabled;
 

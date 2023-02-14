@@ -27,7 +27,7 @@
 }
 
 /* Style the arrow inside the select element: */
-.select-selected:after {
+.select-selected::after {
   position: absolute;
   content: "";
   width: 10px;
@@ -38,7 +38,7 @@
 }
 
 /* Point the arrow upwards when the select box is open (active): */
-.select-selected.select-arrow-active:after {
+.select-selected.select-arrow-active::after {
   transform: scale(1, -1);
 }
 
@@ -55,11 +55,11 @@
 }
 
 .select-items div:nth-child(1) {
-  border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0 0;
 }
 
 .select-items div:last-child {
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0 0 4px 4px;
 }
 
 .select-items div:not(:last-child) {
@@ -94,12 +94,11 @@
 .select-items div:hover,
 .same-as-selected {
   background-color: $secondary-primary;
-
 }
 
 .same-as-selected {
-  background-color: $color-base-primary !important;
-  color: $background-color-main !important;
+  background-color: $color-base-primary;
+  color: $background-color-main;
 }
 
 .custom-select__without-js {
@@ -115,7 +114,7 @@
   padding: 4px 30px 4px 10px;
   width: 165px;
   position: relative;
-  background: url("../img/icons/bird-of-selector.svg") no-repeat right 10px center;
+  background-image: url("../img/icons/bird-of-selector.svg") no-repeat right 10px center;
   cursor: pointer;
 
   &:hover,

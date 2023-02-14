@@ -41,7 +41,6 @@
   }
 
 
-
   &:hover,
   &:focus-visible {
     opacity: 0.6;
@@ -213,8 +212,8 @@
   @media (min-width: $desktop-width) {
     margin-left: 20px;
 
-    &:hover>.main-header__user-icon,
-    &:focus-visible>.main-header__user-icon {
+    &:hover > .main-header__user-icon,
+    &:focus-visible > .main-header__user-icon {
       fill: $color-base-primary;
     }
   }

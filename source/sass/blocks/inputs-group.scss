@@ -1,7 +1,3 @@
-.inputs-group {
-  @media (min-width: $tablet-width) {}
-}
-
 .inputs-group__header {
   margin-bottom: 22px;
   font-weight: 600;
@@ -17,9 +13,6 @@
   }
 }
 
-.inputs-group__price-inputs {
-  @media (min-width: $tablet-width) {}
-}
 
 .inputs-group__range-inputs {
   position: relative;
@@ -161,12 +154,12 @@
   }
 
   &:focus-visible {
-    outline-offset: 0px;
+    outline-offset: 0;
     outline: $primary-darker auto 1px;
   }
 
   &:disabled {
-    outline-offset: 0px;
+    outline-offset: 0;
     outline: $color-disabled auto 1px;
     color: $color-placeholder;
   }
