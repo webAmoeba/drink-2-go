@@ -49,7 +49,18 @@
   }
 }
 
-.main-footer__logo-link {}
+.main-footer__logo-link {
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $secondary-primary;
+  }
+}
 
 .main-header__logo-link {}
 
@@ -74,6 +85,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:hover>.main-footer__social-svg,
+  &:focus-visible>.main-footer__social-svg {
+    fill: $color-base-primary;
+  }
+
+  &:active>.main-footer__social-svg {
+    fill: $primary-darker;
+  }
 }
 
 .main-footer__social-svg {
@@ -134,6 +158,16 @@
 
     padding-left: 18px;
   }
+
+  &:hover,
+  &:focus-visible {
+    color: $color-base-primary;
+    outline: none;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
 }
 
 .main-footer__media {}
@@ -173,6 +207,25 @@
 .main-footer__created-link {
   display: flex;
   align-items: center;
+
+  &:hover,
+  &:focus-visible {
+    color: $color-base-primary;
+    outline: none;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
+
+  &:hover .main-footer__academy-logo,
+  &:focus-visible .main-footer__academy-logo {
+    fill: $color-base-primary;
+  }
+
+  &:active {
+    fill: $primary-darker;
+  }
 }
 
 .main-footer__academy-logo {
