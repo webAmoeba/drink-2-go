@@ -17,7 +17,6 @@
 .swiper-slide {}
 
 .promo__item {
-
   &--first {
     background-color: $background-promo-flat-white;
   }
@@ -31,6 +30,13 @@
   }
 }
 
+.promo-empty {
+  @media (min-width: $tablet-width) {
+    height: 188px;
+    background-color: $background-color-main;
+  }
+}
+
 
 .promo__item-section {
   margin-left: 20px;
@@ -41,6 +47,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    padding-top: 58px;
+    margin-left: 90px;
+    margin-right: 90px;
+    position: relative;
+    padding-bottom: 308px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,6 +72,10 @@
     width: 476px;
     height: 476px;
     margin-top: 20px;
+    position: absolute;
+    bottom: -188px;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 
   @media (min-width: $desktop-width) {
