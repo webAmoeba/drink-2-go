@@ -54,7 +54,7 @@
   cursor: pointer;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     &::before {
       position: absolute;
       content: "";

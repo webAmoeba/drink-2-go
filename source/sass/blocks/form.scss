@@ -55,7 +55,7 @@
   cursor: pointer;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: $color-base-primary-lighter;
     outline: none;
   }
@@ -84,7 +84,7 @@
   }
 
   &:hover,
-  &:focus,
+  &:focus-visible,
   &:active,
   &:disabled {
     color: $background-color-main;

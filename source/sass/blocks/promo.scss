@@ -153,7 +153,7 @@
   cursor: pointer;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: $color-base-primary-lighter;
     outline: none;
   }

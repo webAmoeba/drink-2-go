@@ -24,7 +24,7 @@
   color: $color-base-primary;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     outline: none;
     background-color: $color-base-primary-lighter;
     color: $background-color-main;

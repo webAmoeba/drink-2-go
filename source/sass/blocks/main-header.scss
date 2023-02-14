@@ -43,7 +43,7 @@
 
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     opacity: 0.6;
     outline: none;
   }
@@ -163,7 +163,7 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     color: $color-base-primary;
     outline: none;
   }
@@ -197,7 +197,7 @@
   background-color: inherit;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     color: $color-base-primary;
     outline: none;
   }
@@ -214,7 +214,7 @@
     margin-left: 20px;
 
     &:hover>.main-header__user-icon,
-    &:focus>.main-header__user-icon {
+    &:focus-visible>.main-header__user-icon {
       fill: $color-base-primary;
     }
   }
