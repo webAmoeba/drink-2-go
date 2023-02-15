@@ -38,7 +38,7 @@ const html = () => {
 
 // Scripts
 
-export const scripts = () => {
+const scripts = () => {
   return gulp.src('source/**/*.js')
     .pipe(terser())
     .pipe(gulp.dest('build'));
@@ -52,7 +52,7 @@ const optimizeImages = () => {
     .pipe(gulp.dest('build/img'));
 }
 
-export const copyImages = () => {
+const copyImages = () => {
   return gulp.src(['source/img/**/*.{jpg,png}', '!source/img/favicons/*.{jpg,png}'])
     .pipe(gulp.dest('build/img'));
 }
@@ -87,7 +87,7 @@ export const sprite = () => {
 
 // Copy
 
-export const copy = (done) => {
+const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/img/favicons/*.{png,svg}',

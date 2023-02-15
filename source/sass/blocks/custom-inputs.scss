@@ -16,6 +16,10 @@
 .custom-inputs__default-checkbox {
   position: absolute;
   appearance: none;
+
+  &:focus-visible {
+    outline: 0;
+  }
 }
 
 
@@ -100,8 +104,8 @@
 //////////////////////////////////                                                                                 H O V E R        F O C U S        (НАЧАЛО)
 .custom-inputs__default-radio:hover ~ .custom-inputs__custom-radio,
 .custom-inputs__default-radio:focus-visible ~ .custom-inputs__custom-radio {
-  outline-offset: 0;
-  outline: $color-base-primary-lighter auto 2px;
+  border: $primary-darker solid 2px;
+  outline: 0;
 
   &::before {
     background-color: rgba($color-base-primary, 0.25);
@@ -119,8 +123,8 @@
 
 .custom-inputs__default-checkbox:hover ~ .custom-inputs__custom-checkbox,
 .custom-inputs__default-checkbox:focus-visible ~ .custom-inputs__custom-checkbox {
-  outline-offset: 0;
-  outline: $color-base-primary-lighter auto 2px;
+  border: $primary-darker solid 2px;
+  outline: 0;
   background-color: rgba($color-base-primary-lighter, 0.25);
 }
 
@@ -131,6 +135,7 @@
 .custom-inputs__default-radio:disabled ~ .custom-inputs__custom-radio {
   outline: none;
   background-color: transparent;
+  border: $color-disabled solid 2px;
 
   &::before {
     background-color: transparent;
@@ -146,6 +151,7 @@
 .custom-inputs__default-checkbox:disabled ~ .custom-inputs__custom-checkbox {
   outline: none;
   background-color: $color-disabled;
+  border: $color-disabled solid 2px;
 }
 
 .custom-inputs__default-checkbox:checked:disabled ~ .custom-inputs__custom-checkbox {

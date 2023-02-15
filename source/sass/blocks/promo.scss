@@ -10,12 +10,18 @@
   &--third {
     background-color: $background-promo-espresso;
   }
-}
 
-.promo-empty {
   @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
-    height: 188px;
-    background-color: $background-color-main;
+    padding-bottom: 188px;
+
+    &::after {
+      position: absolute;
+      height: 188px;
+      width: 100%;
+      content: "";
+      background-color: $background-color-main;
+      z-index: -1;
+    }
   }
 }
 
