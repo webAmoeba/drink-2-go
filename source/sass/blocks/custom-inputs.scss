@@ -142,6 +142,10 @@
   }
 }
 
+.custom-inputs__default-radio:disabled ~ .custom-inputs__label-text {
+  color: $color-placeholder;
+}
+
 .custom-inputs__default-radio:checked:disabled ~ .custom-inputs__custom-radio {
   &::before {
     background-color: $color-disabled;
@@ -152,6 +156,10 @@
   outline: none;
   background-color: $color-disabled;
   border: $color-disabled solid 2px;
+}
+
+.custom-inputs__default-checkbox:disabled ~ .custom-inputs__label-text {
+  color: $color-placeholder;
 }
 
 .custom-inputs__default-checkbox:checked:disabled ~ .custom-inputs__custom-checkbox {

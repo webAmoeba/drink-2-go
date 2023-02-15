@@ -26,7 +26,7 @@
   margin-top: 36px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 40px;
+    margin-top: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,6 +39,6 @@
     display: grid;
     grid-template-columns: 318px 1fr;
     gap: 30px;
-    margin-top: 40px;
+    margin-top: 42px;
   }
 }
