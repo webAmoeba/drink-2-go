@@ -92,7 +92,6 @@ export const copy = (done) => {
     'source/fonts/*.{woff2,woff}',
     'source/img/favicons/*.{png,svg}',
     'source/*.ico',
-    'source/*.webmanifest',
     'source/leaflet/*.css'
   ], {
     base: 'source'

@@ -32,7 +32,7 @@ main {
   flex-grow: 1;
 }
 
-a {
+.reset-link {
   text-decoration: none;
   color: inherit;
 }
@@ -44,8 +44,8 @@ img {
   object-fit: cover;
 }
 
-button,
-input {
+//for buttons and inputs
+.font-family {
   font-family: "Montserrat", "Arial", sans-serif;
 }
 
