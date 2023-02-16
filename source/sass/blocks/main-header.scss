@@ -82,6 +82,14 @@
   grid-area: menu;
   background-color: $background-color-main;
 
+  @media (max-width: ($tablet-width - 1)) {
+    position: relative;
+    top: 0;
+    left: -20px;
+    width: 100vw;
+    z-index: 1;
+  }
+
   @media (min-width: $tablet-width) {
     grid-area: unset;
   }
@@ -99,6 +107,10 @@
       left: -20px;
       width: 100vw;
       z-index: 1;
+
+      ~ .main-header__user-buttons {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -181,9 +193,11 @@
   align-items: start;
   flex-wrap: wrap;
   margin-left: auto;
+  margin-right: 20px;
 
   @media (min-width: $tablet-width) {
     grid-area: unset;
+    margin-right: 0;
   }
 }
 
