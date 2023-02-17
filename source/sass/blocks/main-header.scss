@@ -88,6 +88,14 @@
     left: -20px;
     width: 100vw;
     z-index: 1;
+
+    &--with-js {
+      position: absolute;
+    }
+
+    &--with-js ~ .main-header__user-buttons {
+      margin-right: 0;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -97,20 +105,6 @@
   &--hidden {
     @media (max-width: ($tablet-width - 1)) {
       display: none;
-    }
-  }
-
-  &--with-js {
-    @media (max-width: ($tablet-width - 1)) {
-      position: absolute;
-      top: 0;
-      left: -20px;
-      width: 100vw;
-      z-index: 1;
-
-      ~ .main-header__user-buttons {
-        margin-right: 0;
-      }
     }
   }
 }
