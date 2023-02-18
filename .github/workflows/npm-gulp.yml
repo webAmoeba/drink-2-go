@@ -1,0 +1,40 @@
+name: NodeJS with Gulp
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Build
+      run: |
+        npm install
+        gulp build
+
+    - name: Deploy to GitHub Pages
+      uses: actions/setup-node@v1
+      with:
+        # In order for GitHub to trigger the rebuild of your page you must provide the action with the repositories provided GitHub token.
+        GITHUB_TOKEN: ${{ secrets.key }}
+        # This is the branch you wish to deploy to, for example gh-pages or docs.
+        BRANCH: gh-pages
+        # The folder in your repository that you want to deploy. If your build script compiles into a directory named build you would put it here. Folder paths cannot have a leading / or ./. If you wish to deploy the root directory you can place a . here.
+        FOLDER: build
+        # If your project generates hashed files on build you can use this option to automatically delete them from the deployment branch with each deploy. This option can be toggled on by setting it to true.
+        CLEAN: true
