@@ -28,7 +28,7 @@ jobs:
         gulp build
 
     - name: Deploy to GitHub Pages
-      uses: me
+      uses: actions/setup-node@v1
       with:
         # In order for GitHub to trigger the rebuild of your page you must provide the action with the repositories provided GitHub token.
         GITHUB_TOKEN: ${{ secrets.key }}
