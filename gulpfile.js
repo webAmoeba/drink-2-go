@@ -13,6 +13,7 @@ import svgstore from 'gulp-svgstore';
 import browser from 'browser-sync';
 import { deleteSync } from 'del'
 
+
 // Styles
 
 export const styles = () => {
@@ -151,6 +152,7 @@ export const build = gulp.series(
     createWebp
   ),
 );
+
 
 // Default
 
