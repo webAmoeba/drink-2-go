@@ -12,6 +12,8 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import browser from 'browser-sync';
 import { deleteSync } from 'del'
+import ghPages from 'gulp-gh-pages';
+
 
 // Styles
 
@@ -152,6 +154,7 @@ export const build = gulp.series(
   ),
 );
 
+
 // Default
 
 export default gulp.series(
@@ -170,3 +173,8 @@ export default gulp.series(
     server,
     watcher
   ));
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+      .pipe(ghPages());
+});
