@@ -171,10 +171,10 @@ export default gulp.series(
     watcher
   ));
 
-var gulp = require('gulp');
+var gulpggp = require('gulp');
 var ghPages = require('gulp-gh-pages');
 
-gulp.task('deploy', function () {
-  return gulp.src('./build/**/*')
+gulpggp.task('deploy', function () {
+  return gulpggp.src('./build/**/*')
     .pipe(ghPages());
 });
